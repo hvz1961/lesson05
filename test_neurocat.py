@@ -11,7 +11,6 @@ class Task:
         status = "Выполнено" if self.completed else "Не выполнено"
         return f"Задача: {self.description}, Срок: {self.deadline}, Статус: {status}"
 
-
 class TaskManager:
     def __init__(self):
         self.tasks = []
