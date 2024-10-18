@@ -14,7 +14,7 @@ class Store():
             print(f'товар {name} удален из {self.name_store}')
 
     def get_price(self, name):
-        return self.items.get(name, None)
+        return self.items.get(name)
 
     def update_price(self, name, new_price):
         if name in self.items:
